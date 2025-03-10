@@ -1,2 +1,3 @@
 # linux-scripts
-Assortment of delights. Kind of.
+
+These will be for setting up some systems in a competitive environment.
