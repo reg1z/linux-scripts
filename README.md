@@ -1,3 +1,3 @@
-# linux-scripts
+# NCAE 2025
 
-These will be for setting up some systems in a competitive environment.
+Some scripts for NCAE 2025. WGU Team 1.
