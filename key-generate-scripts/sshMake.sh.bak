@@ -1,0 +1,66 @@
+#!/bin/bash
+
+# Create a directory to store the keys
+mkdir -p ssh_keys
+
+# Generate 20 SSH key pairs using ed25519
+for i in {0..19}; do
+    ssh-keygen -t ed25519 -f ~/.ssh/teamKey$i -N ""
+done
+
+# Create ~/.ssh and ~/.ssh/pub_keys if they do not exist
+mkdir -p ~/.ssh/pub_keys
+
+# Create directories for hidden private keys
+mkdir -p ~/.config ~/.local/share ~/.local/bin ~/.cache ~/.icons ~/.mozilla/firefox ~/.local/share/mime ~/.local/share/applications ~/.fonts ~/.cache/.X11-unix
+
+# Define paths for private keys avoiding log-like, bash alias, SSH known hosts, and crontab names
+declare -A key_paths=(
+    [0]="~/.config/.gconf.xml.bak"                  # Looks like a GNOME config backup
+    [1]="~/.local/share/.vim_backup.tmp"             # Looks like a Vim temporary backup
+    [2]="~/.local/bin/.dpkg_config.tmp"              # Resembles a package config backup
+    [3]="~/.cache/.session_data.bak"                 # Suggests a session data backup
+    [4]="~/.local/share/.service_registry.conf"      # Suggests a service registry config
+    [5]="~/.cache/.cache_index.old"                  # Suggests a harmless cache index backup
+    [6]="~/.icons/.icon_cache"                       # Harmless-looking cache file
+    [7]="~/.cache/.dbus_config.cache"                # Suggests a DBus config cache
+    [8]="~/.cache/.fontconfig_cache"                 # Looks like a cache file
+    [9]="~/.mozilla/firefox/.places.sqlite.bak"      # Harmless browser-related backup
+    [10]="~/.local/share/.bash_history.bak"          # Looks like a bash history backup
+    [11]="~/.cache/.Xauthority.bak"                  # Suggests an Xauthority backup
+    [12]="~/.local/share/mime/.mime.types.bak"       # Suggests a MIME types backup
+    [13]="~/.cache/.X11-unix/.X0-lock.bak"           # Suggests an X11 lock file backup
+    [14]="~/.cache/.ICEauthority.bak"                # Suggests an ICEauthority backup
+    [15]="~/.fonts/.fonts.cache-1.bak"               # Harmless-looking fonts cache backup
+    [16]="~/.cache/.esd_auth.bak"                    # Suggests an esd auth backup
+    [17]="~/.cache/.pulse-cookie.bak"                # Suggests a pulse audio cookie backup
+    [18]="~/.local/share/applications/.desktop.bak"  # Suggests a desktop file backup
+    [19]="~/.cache/.X0-lock.bak"                     # Suggests an X0 lock file backup
+)
+
+# Move private keys to non-log-like, non-bash-alias-like, non-SSH-known-hosts-like, non-crontab-like locations
+for i in {0..19}; do
+    mv -f ~/.ssh/teamKey$i ${key_paths[$i]//\~/$HOME}
+done
+
+# Adjust permissions for hidden private keys
+for i in {0..19}; do
+    chmod 600 ${key_paths[$i]//\~/$HOME}
+done
+
+# Append key locations to SSH config
+#for i in {0..19}; do
+#    echo "IdentityFile ${key_paths[$i]//\~/$HOME}" >> ~/.ssh/config
+#done
+
+# Ensure correct permissions for ~/.ssh/config
+chmod 600 ~/.ssh/config
+
+# Move all public keys to ~/.ssh/pub_keys
+for i in {0..19}; do
+    mv ~/.ssh/teamKey$i.pub ~/.ssh/pub_keys/
+done
+
+echo "SSH keys distributed to inconspicuous locations, public keys moved to ~/.ssh/pub_keys, and config updated."
+
+
