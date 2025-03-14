@@ -1,2 +1,0 @@
-Mar 13 23:45:02 ubuntu-sandbox snapd[647]: autorefresh.go:625: Cannot prepare auto-refresh change due to a permanent network error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
-Mar 13 23:45:02 ubuntu-sandbox snapd[647]: stateengine.go:161: state ensure error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution

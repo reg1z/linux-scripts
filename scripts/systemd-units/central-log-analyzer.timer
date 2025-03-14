@@ -1,0 +1,12 @@
+[Unit]
+Description=Run Central Log Analysis every 3 minutes
+Requires=central-log-analyzer.service
+
+[Timer]
+Unit=central-log-analyzer.service
+OnBootSec=120s
+OnUnitActiveSec=120s
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

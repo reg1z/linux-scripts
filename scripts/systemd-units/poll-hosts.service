@@ -1,0 +1,54 @@
+[Unit]
+Description=Centralized Log Polling Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=logging
+Group=logging
+ExecStart=/bin/bash /home/logging/scripts/auto/rotatePoll.sh 56
+
+# Basic sandboxing
+PrivateTmp=true
+ProtectHome=read-only
+ProtectSystem=strict
+NoNewPrivileges=true
+
+# Directory access control
+ReadWritePaths=/var/log/aggregated
+ReadOnlyPaths=/home/logging/.config /home/logging/.local /home/logging/.cache /home/logging/.mozilla /home/logging/.fonts /home/logging/.icons
+InaccessiblePaths=/root /boot /media /mnt /opt
+
+# Network access (needed for SFTP)
+PrivateNetwork=false
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+# System call filtering - allow only what's needed for networking and file operations
+SystemCallFilter=@system-service @network-io @file-system
+SystemCallFilter=~@debug @raw-io @mount @privileged @resources @cpu-emulation @obsolete
+SystemCallArchitectures=native
+
+# Memory protections
+RestrictRealtime=true
+MemoryDenyWriteExecute=false  # Set to false because SFTP client might need this
+RestrictSUIDSGID=true
+LockPersonality=true
+
+# Kernel protection
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+
+# Capability restrictions - we need minimal capabilities
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE CAP_DAC_READ_SEARCH CAP_DAC_OVERRIDE
+AmbientCapabilities=
+
+# Additional protections
+ProtectClock=true
+ProtectHostname=true
+RestrictNamespaces=true
+PrivateDevices=true
+
+[Install]
+WantedBy=multi-user.target

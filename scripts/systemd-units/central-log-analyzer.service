@@ -1,0 +1,18 @@
+[Unit]
+Description=Central Log Analysis Service
+After=network.target
+
+[Service]
+Type=oneshot
+User=logging
+Group=logging
+ExecStart=/home/logging/linux-scripts/central-log-analyzer.sh
+Nice=10
+IOSchedulingClass=idle
+MemoryLimit=200M
+TimeoutStartSec=60s
+CPUSchedulingPolicy=batch
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,21 @@
+[Unit]
+Description=Endpoint Log Analysis Service
+After=rsyslog.service
+
+[Service]
+Type=oneshot
+User=logging
+Group=logging
+ExecStart=/home/logging/scripts/auto/log-analyzer.sh
+Nice=19
+IOSchedulingClass=idle
+CPUSchedulingPolicy=batch
+MemoryLimit=100M
+TimeoutStartSec=20s
+Restart=no
+
+# Limited isolation that won't break display
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target
