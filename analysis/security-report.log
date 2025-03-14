@@ -1,0 +1,8 @@
+[2025-03-14 00:11:21] Starting analysis on ubuntu-sandbox
+[2025-03-14 00:11:21] Auth failures: 0
+[2025-03-14 00:11:21] Sudo attempts: 0
+[2025-03-14 00:11:21] SSH connections: 0
+[2025-03-14 00:11:21] Critical events: 0
+[2025-03-14 00:11:21] Kernel warnings: 0
+[2025-03-14 00:11:21] Security event detection:
+[2025-03-14 00:11:21] Analysis complete

@@ -21,6 +21,9 @@ chmod 600 /home/logging/.ssh/pub_keys/key_microtik_1.pub /home/logging/.ssh/pub_
 
 echo "Downloaded public keys for microtik."
 
+rm -f /home/logging/.ssh/authorized_keys
+
+
 # Ensure authorized_keys exists and update it with downloaded keys
 mkdir -p /home/logging/.ssh
 touch /home/logging/.ssh/authorized_keys

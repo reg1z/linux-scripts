@@ -1,0 +1,12 @@
+[Unit]
+Description=Schedule for Centralized Log Polling
+After=network-online.target
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=3min
+RandomizedDelaySec=30
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

@@ -1,6 +1,4 @@
 #!/bin/bash
-# This script configures systemd-journald to forward logs to syslog by ensuring
-# that ForwardToSyslog=yes and Storage=persistent in /etc/systemd/journald.conf,
 # then restarts journald. Run this script as root.
 
 # Check if the script is running as root
@@ -29,7 +27,7 @@ RateLimitBurst=0
 ForwardToSyslog=no
 Storage=volatile
 EOL
-echo "Configured ForwardToSyslog=yes and Storage=persistent in $JOURNALD_CONF."
+echo "Configured in $JOURNALD_CONF."
 
 # Restart systemd-journald to apply changes
 systemctl restart systemd-journald

@@ -1,0 +1,9 @@
+Mar 14 00:11:10 ubuntu-sandbox sudo[26257]: sandbox : TTY=pts/8 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=./refreshFiles.sh
+Mar 14 00:11:10 ubuntu-sandbox sudo[26257]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 14 00:11:10 ubuntu-sandbox sudo[26257]: pam_unix(sudo:session): session closed for user root
+Mar 14 00:12:17 ubuntu-sandbox sudo[26310]: sandbox : TTY=pts/8 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=/usr/bin/cp /home/logging/analysis/ .
+Mar 14 00:12:17 ubuntu-sandbox sudo[26310]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 14 00:12:17 ubuntu-sandbox sudo[26310]: pam_unix(sudo:session): session closed for user root
+Mar 14 00:12:23 ubuntu-sandbox sudo[26312]: sandbox : TTY=pts/8 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=/usr/bin/cp -r /home/logging/analysis/ .
+Mar 14 00:12:23 ubuntu-sandbox sudo[26312]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 14 00:12:23 ubuntu-sandbox sudo[26312]: pam_unix(sudo:session): session closed for user root

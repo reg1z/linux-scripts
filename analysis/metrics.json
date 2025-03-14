@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-03-14 00:11:21",
+  "hostname": "ubuntu-sandbox",
+  "metrics": {
+    "auth_failures": 0,
+    "sudo_attempts": 0,
+    "ssh_connections": 0,
+    "critical_events": 0,
+    "kernel_warnings": 0
+  }
+}

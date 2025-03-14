@@ -1,0 +1,2 @@
+Mar 13 23:53:26 ubuntu-sandbox systemd[1294]: Started VTE child process 25758 launched by gnome-terminal-server process 1892.
+Mar 13 23:57:27 ubuntu-sandbox rsyslogd[24848]: imjournal: fopen() failed for path: '/var/lib/rsyslog/imjournal.state.tmp': No such file or directory [v8.2001.0 try https://www.rsyslog.com/e/2013 ]

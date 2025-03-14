@@ -16,63 +16,47 @@ LOG_DIR="/var/log/aggregated"
 mkdir -p "$LOG_DIR"
 echo "Created log directory: $LOG_DIR"
 
-# Function to update a configuration file by replacing "/var/log/" with "$LOG_DIR/"
-update_config() {
-    local file="$1"
-    # Backup the original file
-    cp -f "$file" "$file.bak"
-    echo "Backed up $file to $file.bak"
-    # Replace instances of /var/log/ with the new log directory path
-    sed -i "s|/var/log/|$LOG_DIR/|g" "$file"
-    echo "Updated $file to direct logs to $LOG_DIR"
-}
-
-# Update the main rsyslog configuration file
-if [ -f /etc/rsyslog.conf ]; then
-    update_config /etc/rsyslog.conf
-else
-    echo "Warning: /etc/rsyslog.conf not found."
-fi
-
-# Update any configuration files in /etc/rsyslog.d/ (if present)
-if [ -d /etc/rsyslog.d ]; then
-    for conf in /etc/rsyslog.d/*.conf; do
-        [ -e "$conf" ] || continue
-        update_config "$conf"
-    done
-fi
-
-# Append ownership and permission directives to /etc/rsyslog.conf if not already present
+# Backup the original rsyslog configuration file
 RSYSLOG_CONFIG="/etc/rsyslog.conf"
-if grep -q "^\$FileOwner logging" "$RSYSLOG_CONFIG"; then
-    echo "Ownership directives already exist in $RSYSLOG_CONFIG. Skipping addition."
+if [ -f "$RSYSLOG_CONFIG" ]; then
+    cp -f "$RSYSLOG_CONFIG" "$RSYSLOG_CONFIG.bak"
+    echo "Backed up $RSYSLOG_CONFIG to $RSYSLOG_CONFIG.bak"
 else
-    echo "Appending ownership directives to $RSYSLOG_CONFIG"
-    cat << 'EOF' >> "$RSYSLOG_CONFIG"
+    echo "Warning: $RSYSLOG_CONFIG not found."
+fi
+
+# Create new rsyslog configuration
+cat << 'EOF' > "$RSYSLOG_CONFIG"
 # Load imjournal module
-module(load="imjournal")
+module(load="imjournal" RateLimit.Interval="0" RateLimit.Burst="0")
+module(load="imuxsock")
 
 # Set file and directory ownership for aggregated logs
 $FileOwner logging
 $FileGroup logging
 $FileCreateMode 0600
 $DirCreateMode 0700
-EOF
-fi
-
-
-
-
-# Append custom template and facility-specific log rules for enriched local analysis.
-# Check if our BlueTeamFormat template is already defined.
-if grep -q "template(name=\"BlueTeamFormat\"" "$RSYSLOG_CONFIG"; then
-    echo "Custom BlueTeamFormat template already exists. Skipping template addition."
-else
-    echo "Appending custom template and facility log rules to $RSYSLOG_CONFIG"
-    cat << 'EOF' >> "$RSYSLOG_CONFIG"
 
 # Custom template for enriched Blue Team logging (high-precision timestamps, host, etc.)
 template(name="BlueTeamFormat" type="string" string="%TIMESTAMP:::date-unixtimestamp% %HOSTNAME% %syslogtag%%msg%\n")
+
+# Direct all logs to the new log directory with custom template
+#if $inputname == "imjournal" then {
+#    action(
+#        type="omfile"
+#        file="/var/log/aggregated/journal.log"
+#        template="BlueTeamFormat"
+#
+#        # Set ownership and permissions here:
+#        fileOwner="logging"
+#        fileGroup="logging"
+#        fileCreateMode="0600"
+#        dirCreateMode="0700"
+#        createDirs="on"
+#    )
+#    stop
+#}
+
 
 # Facility-specific rules for local log analysis using the custom template
 auth,authpriv.*           -/var/log/aggregated/auth.log;BlueTeamFormat
@@ -83,7 +67,8 @@ lpr.*                     -/var/log/aggregated/lpr.log;BlueTeamFormat
 mail.*                    -/var/log/aggregated/mail.log;BlueTeamFormat
 user.*                    -/var/log/aggregated/user.log;BlueTeamFormat
 EOF
-fi
+
+echo "Replaced $RSYSLOG_CONFIG with new configuration."
 
 # Restart rsyslog service to apply changes
 echo "Restarting rsyslog service..."

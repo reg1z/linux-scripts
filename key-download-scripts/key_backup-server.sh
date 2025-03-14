@@ -21,6 +21,9 @@ chmod 600 /home/logging/.ssh/pub_keys/key_backup-server_1.pub /home/logging/.ssh
 
 echo "Downloaded public keys for backup-server."
 
+rm -f /home/logging/.ssh/authorized_keys
+
+
 # Ensure authorized_keys exists and update it with downloaded keys
 mkdir -p /home/logging/.ssh
 touch /home/logging/.ssh/authorized_keys

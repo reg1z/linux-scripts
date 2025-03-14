@@ -21,6 +21,8 @@ chmod 600 /home/logging/.ssh/pub_keys/key_external-kali_1.pub /home/logging/.ssh
 
 echo "Downloaded public keys for external-kali."
 
+rm -f /home/logging/.ssh/authorized_keys
+
 # Ensure authorized_keys exists and update it with downloaded keys
 mkdir -p /home/logging/.ssh
 touch /home/logging/.ssh/authorized_keys

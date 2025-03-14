@@ -1,0 +1,253 @@
+Mar 13 20:35:25 ubuntu-sandbox rsyslogd[24848]: imjournal: No statefile exists, /var/lib/rsyslog/imjournal.state will be created (ignore if this is first run): No such file or directory [v8.2001.0 try https://www.rsyslog.com/e/2040 ]
+Mar 13 20:35:25 ubuntu-sandbox systemd[1]: systemd-journal-flush.service: Succeeded.
+Mar 13 20:35:25 ubuntu-sandbox systemd[1]: Stopped Flush Journal to Persistent Storage.
+Mar 13 20:35:25 ubuntu-sandbox systemd-journald[24646]: Journal stopped
+Mar 13 20:35:25 ubuntu-sandbox systemd[1]: Stopping Journal Service...
+Mar 13 20:35:25 ubuntu-sandbox systemd-journald[24646]: Received SIGTERM from PID 1 (systemd).
+Mar 13 20:35:25 ubuntu-sandbox systemd[1]: systemd-journald.service: Succeeded.
+Mar 13 20:35:25 ubuntu-sandbox systemd[1]: Stopped Journal Service.
+Mar 13 20:35:25 ubuntu-sandbox systemd[1]: Starting Journal Service...
+Mar 13 20:35:25 ubuntu-sandbox systemd-journald[24859]: Journal started
+Mar 13 20:35:25 ubuntu-sandbox systemd-journald[24859]: Runtime Journal (/run/log/journal/fa097a2b08c54cdba131a3ff8c447309) is 22.1M, max 19.7M, 0B free.
+Mar 13 20:35:25 ubuntu-sandbox systemd[1]: Started Journal Service.
+Mar 13 20:35:25 ubuntu-sandbox systemd-journald[24859]: Runtime Journal (/run/log/journal/fa097a2b08c54cdba131a3ff8c447309) is 22.1M, max 19.7M, 0B free.
+Mar 13 20:35:25 ubuntu-sandbox systemd[1]: Starting Flush Journal to Persistent Storage...
+Mar 13 20:35:25 ubuntu-sandbox systemd[1]: Finished Flush Journal to Persistent Storage.
+Mar 13 20:35:25 ubuntu-sandbox su[24865]: (to logging) sandbox on pts/3
+Mar 13 20:35:25 ubuntu-sandbox su[24865]: pam_unix(su-l:session): session opened for user logging by (uid=0)
+Mar 13 20:35:26 ubuntu-sandbox su[24865]: pam_unix(su-l:session): session closed for user logging
+Mar 13 20:35:26 ubuntu-sandbox su[24975]: (to logging) sandbox on pts/3
+Mar 13 20:35:26 ubuntu-sandbox su[24975]: pam_unix(su-l:session): session opened for user logging by (uid=0)
+Mar 13 20:35:26 ubuntu-sandbox su[24975]: pam_unix(su-l:session): session closed for user logging
+Mar 13 20:35:26 ubuntu-sandbox sudo[24800]: pam_unix(sudo:session): session closed for user root
+Mar 13 20:40:55 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 20:40:55 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 20:40:55 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 20:40:55 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 20:40:56 ubuntu-sandbox journal[1443]: g_dbus_connection_emit_signal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+Mar 13 20:40:56 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 20:40:56 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 20:43:19 ubuntu-sandbox snapd[647]: autorefresh.go:625: Cannot prepare auto-refresh change due to a permanent network error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 20:43:19 ubuntu-sandbox snapd[647]: stateengine.go:161: state ensure error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 20:54:23 ubuntu-sandbox systemd[1]: fwupd.service: Succeeded.
+Mar 13 21:03:19 ubuntu-sandbox snapd[647]: autorefresh.go:625: Cannot prepare auto-refresh change due to a permanent network error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 21:03:19 ubuntu-sandbox snapd[647]: stateengine.go:161: state ensure error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 21:17:01 ubuntu-sandbox CRON[25013]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 13 21:17:01 ubuntu-sandbox CRON[25014]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 13 21:17:01 ubuntu-sandbox CRON[25013]: pam_unix(cron:session): session closed for user root
+Mar 13 21:28:19 ubuntu-sandbox snapd[647]: autorefresh.go:625: Cannot prepare auto-refresh change due to a permanent network error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 21:28:19 ubuntu-sandbox snapd[647]: stateengine.go:161: state ensure error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 21:29:24 ubuntu-sandbox kernel: [28603.745595] e1000: enp0s3 NIC Link is Down
+Mar 13 21:29:24 ubuntu-sandbox systemd-networkd[595]: enp0s3: Lost carrier
+Mar 13 21:29:24 ubuntu-sandbox avahi-daemon[633]: Withdrawing address record for 192.168.56.5 on enp0s3.
+Mar 13 21:29:24 ubuntu-sandbox avahi-daemon[633]: Leaving mDNS multicast group on interface enp0s3.IPv4 with address 192.168.56.5.
+Mar 13 21:29:24 ubuntu-sandbox avahi-daemon[633]: Interface enp0s3.IPv4 no longer relevant for mDNS.
+Mar 13 21:29:24 ubuntu-sandbox kernel: e1000: enp0s3 NIC Link is Down
+Mar 13 21:29:24 ubuntu-sandbox whoopsie[782]: [21:29:24] Cannot reach: https://daisy.ubuntu.com
+Mar 13 22:01:07 ubuntu-sandbox kernel: [28605.400887] 22:01:07.812224 timesync vgsvcTimeSyncWorker: Radical host time change: 1 912 107 000 000ns (HostNow=1 741 903 267 801 000 000 ns HostLast=1 741 901 355 694 000 000 ns)
+Mar 13 22:01:07 ubuntu-sandbox systemd[1]: Started Run anacron jobs.
+Mar 13 22:01:07 ubuntu-sandbox anacron[25027]: Anacron 2.3 started on 2025-03-13
+Mar 13 22:01:07 ubuntu-sandbox systemd[1]: anacron.service: Succeeded.
+Mar 13 22:01:07 ubuntu-sandbox anacron[25027]: Normal exit (0 jobs run)
+Mar 13 22:01:07 ubuntu-sandbox kernel: 22:01:07.812224 timesync vgsvcTimeSyncWorker: Radical host time change: 1 912 107 000 000ns (HostNow=1 741 903 267 801 000 000 ns HostLast=1 741 901 355 694 000 000 ns)
+Mar 13 22:01:12 ubuntu-sandbox kernel: [28609.797070] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Mar 13 22:01:12 ubuntu-sandbox kernel: e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Mar 13 22:01:12 ubuntu-sandbox systemd-networkd[595]: enp0s3: Gained carrier
+Mar 13 22:01:12 ubuntu-sandbox NetworkManager[636]: <info>  [1741903272.2097] device (enp0s3): carrier: link connected
+Mar 13 22:01:12 ubuntu-sandbox avahi-daemon[633]: Joining mDNS multicast group on interface enp0s3.IPv4 with address 192.168.56.5.
+Mar 13 22:01:12 ubuntu-sandbox avahi-daemon[633]: New relevant interface enp0s3.IPv4 for mDNS.
+Mar 13 22:01:12 ubuntu-sandbox avahi-daemon[633]: Registering new address record for 192.168.56.5 on enp0s3.IPv4.
+Mar 13 22:01:12 ubuntu-sandbox whoopsie[782]: [22:01:12] Cannot reach: https://daisy.ubuntu.com
+Mar 13 22:01:13 ubuntu-sandbox whoopsie[782]: [22:01:13] Cannot reach: https://daisy.ubuntu.com
+Mar 13 22:01:17 ubuntu-sandbox kernel: [28615.401059] 22:01:17.812396 timesync vgsvcTimeSyncWorker: Radical guest time change: 1 912 128 527 000ns (GuestNow=1 741 903 277 812 387 000 ns GuestLast=1 741 901 365 683 860 000 ns fSetTimeLastLoop=true )
+Mar 13 22:01:17 ubuntu-sandbox kernel: 22:01:17.812396 timesync vgsvcTimeSyncWorker: Radical guest time change: 1 912 128 527 000ns (GuestNow=1 741 903 277 812 387 000 ns GuestLast=1 741 901 365 683 860 000 ns fSetTimeLastLoop=true )
+Mar 13 22:01:43 ubuntu-sandbox CRON[25049]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 13 22:01:43 ubuntu-sandbox CRON[25050]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Mar 13 22:01:43 ubuntu-sandbox CRON[25049]: pam_unix(cron:session): session closed for user root
+Mar 13 22:03:24 ubuntu-sandbox dbus-daemon[635]: [system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service' requested by ':1.72' (uid=1002 pid=1443 comm="/usr/bin/gnome-shell " label="unconfined")
+Mar 13 22:03:24 ubuntu-sandbox systemd[1]: Starting Fingerprint Authentication Daemon...
+Mar 13 22:03:24 ubuntu-sandbox dbus-daemon[635]: [system] Successfully activated service 'net.reactivated.Fprint'
+Mar 13 22:03:24 ubuntu-sandbox systemd[1]: Started Fingerprint Authentication Daemon.
+Mar 13 22:03:26 ubuntu-sandbox gdm-password][25075]: gkr-pam: unlocked login keyring
+Mar 13 22:03:26 ubuntu-sandbox NetworkManager[636]: <info>  [1741903406.3678] agent-manager: agent[2601df5a1128c272,:1.72/org.gnome.Shell.NetworkAgent/1002]: agent registered
+Mar 13 22:03:26 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:03:26 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 22:03:26 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:03:26 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 22:03:26 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:03:26 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 22:03:26 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:03:26 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 22:03:26 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Mar 13 22:03:26 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Mar 13 22:03:26 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Mar 13 22:03:26 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Mar 13 22:03:26 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Mar 13 22:03:26 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Mar 13 22:03:26 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Mar 13 22:03:26 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Mar 13 22:03:26 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Mar 13 22:03:54 ubuntu-sandbox systemd[1]: fprintd.service: Succeeded.
+Mar 13 22:08:49 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:08:49 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 22:08:49 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:08:49 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 22:08:49 ubuntu-sandbox journal[1443]: g_dbus_connection_emit_signal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+Mar 13 22:08:49 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:08:49 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 22:17:01 ubuntu-sandbox CRON[25112]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 13 22:17:01 ubuntu-sandbox CRON[25113]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 13 22:17:01 ubuntu-sandbox CRON[25112]: pam_unix(cron:session): session closed for user root
+Mar 13 22:20:02 ubuntu-sandbox snapd[647]: autorefresh.go:625: Cannot prepare auto-refresh change due to a permanent network error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 22:20:02 ubuntu-sandbox snapd[647]: stateengine.go:161: state ensure error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 22:30:01 ubuntu-sandbox CRON[25116]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 13 22:30:01 ubuntu-sandbox CRON[25117]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Mar 13 22:30:01 ubuntu-sandbox CRON[25116]: pam_unix(cron:session): session closed for user root
+Mar 13 22:30:01 ubuntu-sandbox rsyslogd[24848]: imjournal: fopen() failed for path: '/var/lib/rsyslog/imjournal.state.tmp': No such file or directory [v8.2001.0 try https://www.rsyslog.com/e/2013 ]
+Mar 13 22:34:29 ubuntu-sandbox systemd[1]: Started Run anacron jobs.
+Mar 13 22:34:29 ubuntu-sandbox systemd[1]: anacron.service: Succeeded.
+Mar 13 22:34:29 ubuntu-sandbox anacron[25119]: Anacron 2.3 started on 2025-03-13
+Mar 13 22:34:29 ubuntu-sandbox anacron[25119]: Normal exit (0 jobs run)
+Mar 13 22:38:14 ubuntu-sandbox dbus-daemon[635]: [system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service' requested by ':1.72' (uid=1002 pid=1443 comm="/usr/bin/gnome-shell " label="unconfined")
+Mar 13 22:38:14 ubuntu-sandbox systemd[1]: Starting Fingerprint Authentication Daemon...
+Mar 13 22:38:14 ubuntu-sandbox dbus-daemon[635]: [system] Successfully activated service 'net.reactivated.Fprint'
+Mar 13 22:38:14 ubuntu-sandbox systemd[1]: Started Fingerprint Authentication Daemon.
+Mar 13 22:38:15 ubuntu-sandbox gdm-password][25160]: gkr-pam: unlocked login keyring
+Mar 13 22:38:16 ubuntu-sandbox NetworkManager[636]: <info>  [1741905496.0347] agent-manager: agent[59b55ad950e66fe0,:1.72/org.gnome.Shell.NetworkAgent/1002]: agent registered
+Mar 13 22:38:16 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:38:16 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 22:38:16 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:38:16 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 22:38:16 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:38:16 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 22:38:16 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:38:16 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 22:38:16 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Mar 13 22:38:16 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Mar 13 22:38:16 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Mar 13 22:38:16 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Mar 13 22:38:16 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Mar 13 22:38:16 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Mar 13 22:38:16 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Mar 13 22:38:16 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Mar 13 22:38:16 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Mar 13 22:38:44 ubuntu-sandbox systemd[1]: fprintd.service: Succeeded.
+Mar 13 22:40:02 ubuntu-sandbox snapd[647]: autorefresh.go:625: Cannot prepare auto-refresh change due to a permanent network error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 22:40:02 ubuntu-sandbox snapd[647]: stateengine.go:161: state ensure error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 22:49:08 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:49:08 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 22:49:08 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:49:08 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 22:49:08 ubuntu-sandbox journal[1443]: g_dbus_connection_emit_signal: assertion 'G_IS_DBUS_CONNECTION (connection)' failed
+Mar 13 22:49:08 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 22:49:08 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 23:00:02 ubuntu-sandbox snapd[647]: autorefresh.go:625: Cannot prepare auto-refresh change due to a permanent network error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 23:00:02 ubuntu-sandbox snapd[647]: stateengine.go:161: state ensure error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 23:17:01 ubuntu-sandbox CRON[25286]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 13 23:17:01 ubuntu-sandbox CRON[25287]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Mar 13 23:17:01 ubuntu-sandbox CRON[25286]: pam_unix(cron:session): session closed for user root
+Mar 13 23:25:02 ubuntu-sandbox snapd[647]: autorefresh.go:625: Cannot prepare auto-refresh change due to a permanent network error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 23:25:02 ubuntu-sandbox snapd[647]: stateengine.go:161: state ensure error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 23:30:01 ubuntu-sandbox CRON[25290]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 13 23:30:01 ubuntu-sandbox CRON[25291]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Mar 13 23:30:01 ubuntu-sandbox CRON[25290]: pam_unix(cron:session): session closed for user root
+Mar 13 23:34:24 ubuntu-sandbox systemd[1]: Started Run anacron jobs.
+Mar 13 23:34:24 ubuntu-sandbox anacron[25292]: Anacron 2.3 started on 2025-03-13
+Mar 13 23:34:24 ubuntu-sandbox anacron[25292]: Normal exit (0 jobs run)
+Mar 13 23:34:24 ubuntu-sandbox systemd[1]: anacron.service: Succeeded.
+Mar 13 23:36:44 ubuntu-sandbox dbus-daemon[635]: [system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service' requested by ':1.72' (uid=1002 pid=1443 comm="/usr/bin/gnome-shell " label="unconfined")
+Mar 13 23:36:44 ubuntu-sandbox systemd[1]: Starting Fingerprint Authentication Daemon...
+Mar 13 23:36:44 ubuntu-sandbox dbus-daemon[635]: [system] Successfully activated service 'net.reactivated.Fprint'
+Mar 13 23:36:44 ubuntu-sandbox systemd[1]: Started Fingerprint Authentication Daemon.
+Mar 13 23:36:47 ubuntu-sandbox gdm-password][25333]: pam_unix(gdm-password:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=sandbox
+Mar 13 23:36:52 ubuntu-sandbox gdm-password][25338]: gkr-pam: unlocked login keyring
+Mar 13 23:36:52 ubuntu-sandbox NetworkManager[636]: <info>  [1741909012.4823] agent-manager: agent[de5cb3c2c9f93b08,:1.72/org.gnome.Shell.NetworkAgent/1002]: agent registered
+Mar 13 23:36:52 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 23:36:52 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 23:36:52 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 23:36:52 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 23:36:52 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 23:36:52 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 23:36:53 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 23:36:53 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Mar 13 23:37:14 ubuntu-sandbox systemd[1]: fprintd.service: Succeeded.
+Mar 13 23:42:03 ubuntu-sandbox sudo[25384]: sandbox : TTY=pts/5 ; PWD=/media/sf_linux-scripts/monitoring ; USER=logging ; COMMAND=./endpoint-log-analyzer.sh
+Mar 13 23:42:03 ubuntu-sandbox sudo[25384]: pam_unix(sudo:session): session opened for user logging by (uid=0)
+Mar 13 23:42:03 ubuntu-sandbox sudo[25384]: pam_unix(sudo:session): session closed for user logging
+Mar 13 23:42:26 ubuntu-sandbox sudo[25390]: sandbox : TTY=pts/5 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=./refreshFiles.sh
+Mar 13 23:42:26 ubuntu-sandbox sudo[25390]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 13 23:42:26 ubuntu-sandbox sudo[25390]: pam_unix(sudo:session): session closed for user root
+Mar 13 23:44:06 ubuntu-sandbox sudo[25428]: sandbox : TTY=pts/5 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=./refreshFiles.sh
+Mar 13 23:44:06 ubuntu-sandbox sudo[25428]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 13 23:44:06 ubuntu-sandbox sudo[25428]: pam_unix(sudo:session): session closed for user root
+Mar 13 23:45:02 ubuntu-sandbox snapd[647]: autorefresh.go:625: Cannot prepare auto-refresh change due to a permanent network error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 23:45:02 ubuntu-sandbox snapd[647]: stateengine.go:161: state ensure error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 13 23:48:04 ubuntu-sandbox sudo[25544]: sandbox : TTY=pts/5 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=./refreshFiles.sh
+Mar 13 23:48:04 ubuntu-sandbox sudo[25544]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 13 23:48:04 ubuntu-sandbox sudo[25544]: pam_unix(sudo:session): session closed for user root
+Mar 13 23:53:26 ubuntu-sandbox systemd[1294]: Started VTE child process 25758 launched by gnome-terminal-server process 1892.
+Mar 13 23:53:42 ubuntu-sandbox sudo[25771]: sandbox : TTY=pts/8 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=./refreshFiles.sh
+Mar 13 23:53:42 ubuntu-sandbox sudo[25771]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 13 23:53:42 ubuntu-sandbox sudo[25771]: pam_unix(sudo:session): session closed for user root
+Mar 13 23:54:33 ubuntu-sandbox sudo[25784]: sandbox : TTY=pts/8 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=./refreshFiles.sh
+Mar 13 23:54:33 ubuntu-sandbox sudo[25784]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 13 23:54:33 ubuntu-sandbox sudo[25784]: pam_unix(sudo:session): session closed for user root
+Mar 13 23:57:27 ubuntu-sandbox sudo[25884]: sandbox : TTY=pts/8 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=./refreshFiles.sh
+Mar 13 23:57:27 ubuntu-sandbox sudo[25884]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 13 23:57:27 ubuntu-sandbox sudo[25884]: pam_unix(sudo:session): session closed for user root
+Mar 13 23:57:27 ubuntu-sandbox rsyslogd[24848]: imjournal: fopen() failed for path: '/var/lib/rsyslog/imjournal.state.tmp': No such file or directory [v8.2001.0 try https://www.rsyslog.com/e/2013 ]
+Mar 13 23:59:36 ubuntu-sandbox sudo[26098]: sandbox : TTY=pts/8 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=./refreshFiles.sh
+Mar 13 23:59:36 ubuntu-sandbox sudo[26098]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 13 23:59:36 ubuntu-sandbox sudo[26098]: pam_unix(sudo:session): session closed for user root
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Starting Rotate log files...
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Starting Daily man-db regeneration...
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Stopping Make remote CUPS printers available locally...
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: cups-browsed.service: Succeeded.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Stopped Make remote CUPS printers available locally.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Stopping CUPS Scheduler...
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: cups.service: Succeeded.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Stopped CUPS Scheduler.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: cups.path: Succeeded.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Stopped CUPS Scheduler.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Stopping CUPS Scheduler.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Started CUPS Scheduler.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: cups.socket: Succeeded.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Closed CUPS Scheduler.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Stopping CUPS Scheduler.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Listening on CUPS Scheduler.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Started CUPS Scheduler.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Started Make remote CUPS printers available locally.
+Mar 14 00:00:32 ubuntu-sandbox sudo[26160]: sandbox : TTY=pts/8 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=./refreshFiles.sh
+Mar 14 00:00:32 ubuntu-sandbox sudo[26160]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 14 00:00:32 ubuntu-sandbox sudo[26160]: pam_unix(sudo:session): session closed for user root
+Mar 14 00:00:32 ubuntu-sandbox rsyslogd[24848]: [origin software="rsyslogd" swVersion="8.2001.0" x-pid="24848" x-info="https://www.rsyslog.com"] rsyslogd was HUPed
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: logrotate.service: Succeeded.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Finished Rotate log files.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: man-db.service: Succeeded.
+Mar 14 00:00:32 ubuntu-sandbox systemd[1]: Finished Daily man-db regeneration.
+Mar 14 00:02:10 ubuntu-sandbox sudo[26212]: sandbox : TTY=pts/8 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=./refreshFiles.sh
+Mar 14 00:02:10 ubuntu-sandbox sudo[26212]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 14 00:02:10 ubuntu-sandbox sudo[26212]: pam_unix(sudo:session): session closed for user root
+Mar 14 00:05:36 ubuntu-sandbox sudo[26234]: sandbox : TTY=pts/8 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=./refreshFiles.sh
+Mar 14 00:05:36 ubuntu-sandbox sudo[26234]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 14 00:05:36 ubuntu-sandbox sudo[26234]: pam_unix(sudo:session): session closed for user root
+Mar 14 00:10:02 ubuntu-sandbox snapd[647]: autorefresh.go:625: Cannot prepare auto-refresh change due to a permanent network error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 14 00:10:02 ubuntu-sandbox snapd[647]: stateengine.go:161: state ensure error: persistent network error: Post "https://api.snapcraft.io/v2/snaps/refresh": dial tcp: lookup api.snapcraft.io: Temporary failure in name resolution
+Mar 14 00:11:10 ubuntu-sandbox sudo[26257]: sandbox : TTY=pts/8 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=./refreshFiles.sh
+Mar 14 00:11:10 ubuntu-sandbox sudo[26257]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 14 00:11:10 ubuntu-sandbox sudo[26257]: pam_unix(sudo:session): session closed for user root
+Mar 14 00:12:17 ubuntu-sandbox sudo[26310]: sandbox : TTY=pts/8 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=/usr/bin/cp /home/logging/analysis/ .
+Mar 14 00:12:17 ubuntu-sandbox sudo[26310]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 14 00:12:17 ubuntu-sandbox sudo[26310]: pam_unix(sudo:session): session closed for user root
+Mar 14 00:12:23 ubuntu-sandbox sudo[26312]: sandbox : TTY=pts/8 ; PWD=/media/sf_linux-scripts ; USER=root ; COMMAND=/usr/bin/cp -r /home/logging/analysis/ .
+Mar 14 00:12:23 ubuntu-sandbox sudo[26312]: pam_unix(sudo:session): session opened for user root by (uid=0)
+Mar 14 00:12:23 ubuntu-sandbox sudo[26312]: pam_unix(sudo:session): session closed for user root

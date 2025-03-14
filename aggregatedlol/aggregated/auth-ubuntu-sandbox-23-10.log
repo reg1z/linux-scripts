@@ -1,0 +1,2 @@
+Mar 13 23:17:01 ubuntu-sandbox CRON[25286]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 13 23:17:01 ubuntu-sandbox CRON[25286]: pam_unix(cron:session): session closed for user root

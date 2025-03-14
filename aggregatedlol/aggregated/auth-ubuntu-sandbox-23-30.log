@@ -1,0 +1,4 @@
+Mar 13 23:30:01 ubuntu-sandbox CRON[25290]: pam_unix(cron:session): session opened for user root by (uid=0)
+Mar 13 23:30:01 ubuntu-sandbox CRON[25290]: pam_unix(cron:session): session closed for user root
+Mar 13 23:36:47 ubuntu-sandbox gdm-password][25333]: pam_unix(gdm-password:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost=  user=sandbox
+Mar 13 23:36:52 ubuntu-sandbox gdm-password][25338]: gkr-pam: unlocked login keyring

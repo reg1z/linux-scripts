@@ -1,0 +1,28 @@
+Mar 13 23:30:01 ubuntu-sandbox CRON[25291]: (root) CMD ([ -x /etc/init.d/anacron ] && if [ ! -d /run/systemd/system ]; then /usr/sbin/invoke-rc.d anacron start >/dev/null; fi)
+Mar 13 23:34:24 ubuntu-sandbox systemd[1]: Started Run anacron jobs.
+Mar 13 23:34:24 ubuntu-sandbox anacron[25292]: Anacron 2.3 started on 2025-03-13
+Mar 13 23:34:24 ubuntu-sandbox anacron[25292]: Normal exit (0 jobs run)
+Mar 13 23:34:24 ubuntu-sandbox systemd[1]: anacron.service: Succeeded.
+Mar 13 23:36:44 ubuntu-sandbox dbus-daemon[635]: [system] Activating via systemd: service name='net.reactivated.Fprint' unit='fprintd.service' requested by ':1.72' (uid=1002 pid=1443 comm="/usr/bin/gnome-shell " label="unconfined")
+Mar 13 23:36:44 ubuntu-sandbox systemd[1]: Starting Fingerprint Authentication Daemon...
+Mar 13 23:36:44 ubuntu-sandbox dbus-daemon[635]: [system] Successfully activated service 'net.reactivated.Fprint'
+Mar 13 23:36:44 ubuntu-sandbox systemd[1]: Started Fingerprint Authentication Daemon.
+Mar 13 23:36:52 ubuntu-sandbox NetworkManager[636]: <info>  [1741909012.4823] agent-manager: agent[de5cb3c2c9f93b08,:1.72/org.gnome.Shell.NetworkAgent/1002]: agent registered
+Mar 13 23:36:52 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 23:36:52 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 23:36:52 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 23:36:52 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 23:36:52 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 23:36:52 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 23:36:53 ubuntu-sandbox journal[1443]: cr_parser_new_from_buf: assertion 'a_buf && a_len' failed
+Mar 13 23:36:53 ubuntu-sandbox journal[1443]: cr_declaration_parse_list_from_buf: assertion 'parser' failed
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 31 with keysym 31 (keycode a).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 32 with keysym 32 (keycode b).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 38 with keysym 38 (keycode 11).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 39 with keysym 39 (keycode 12).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 33 with keysym 33 (keycode c).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 34 with keysym 34 (keycode d).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 35 with keysym 35 (keycode e).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 36 with keysym 36 (keycode f).
+Mar 13 23:36:53 ubuntu-sandbox gnome-shell[1443]: Window manager warning: Overwriting existing binding of keysym 37 with keysym 37 (keycode 10).
+Mar 13 23:37:14 ubuntu-sandbox systemd[1]: fprintd.service: Succeeded.

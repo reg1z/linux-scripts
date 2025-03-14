@@ -4,6 +4,8 @@
 # and restarts the SSH service.
 # It must be run as root.
 
+LOGGINGUSER="logging"
+
 # Ensure the script is run as root
 if [ "$EUID" -ne 0 ]; then
   echo "This script must be run as root. Please run with sudo or as the root user."
@@ -22,7 +24,8 @@ fi
 if ! id logging > /dev/null 2>&1; then
     # Create the user with a home directory, assign it to the logging group,
     # and use a non-interactive shell to prevent full shell access.
-    useradd -m -d /home/logging -s /usr/sbin/nologin -g logging logging
+    #useradd -m -d /home/logging -s /usr/sbin/nologin -g logging logging
+    useradd -m -d /home/logging -s /bin/bash -g logging logging
     echo "User 'logging' created with home directory /home/logging and non-interactive shell."
     # Set the password for the logging user
     echo "logging:heyheyhey" | chpasswd
@@ -75,5 +78,13 @@ else
     echo "SSHD configuration test failed. Please check /etc/ssh/sshd_config for errors."
     exit 1
 fi
+
+mkdir /home/$LOGGINGUSER/.ssh/
+touch /home/$LOGGINGUSER/.ssh/config
+
+chmod 600 /home/$LOGGINGUSER/.ssh/config
+chmod 700 /home/$LOGGINGUSER/.ssh/
+chown $LOGGINGUSER:$LOGGINGUSER /home/$LOGGINGUSER/.ssh/config
+chown -R $LOGGINGUSER:$LOGGINGUSER /home/$LOGGINGUSER
 
 echo "Logging user and SSH configuration setup complete."

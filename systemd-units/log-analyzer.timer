@@ -1,0 +1,11 @@
+[Unit]
+Description=Run Endpoint Log Analysis every minute
+Requires=log-analyzer.service
+
+[Timer]
+Unit=log-analyzer.service
+OnBootSec=15s
+OnUnitActiveSec=15s
+
+[Install]
+WantedBy=timers.target
