@@ -1,6 +1,6 @@
 # NCAE 2025
 
-Some scripts for NCAE 2025. WGU Team 1.
+Some scripts for NCAE 2025. WGU Team 1. Because we had to disclose all scripts we brought into the competition, commit messages were left messy to obfuscate the meaning of code from the red team.
 
 # What is this? (post competition rundown)
 This is a homebrewed poll-based logging solution built entirely with bash scripts. It was intended for rapid deployment during the [NCAE 2025 Competition](https://www.ncaecybergames.org). Then, on game day, they gave us access to a SIEM. So we didn't really end up using it.
